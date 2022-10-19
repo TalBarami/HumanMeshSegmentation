@@ -16,6 +16,7 @@ from mesh_segmentation.utils.segmentation_utils import get_best_model, load_data
 sys.path.append(r'/mnt/DS_SHARED/users/talb/projects/3d_avatar_generation')
 sys.path.append(r'/mnt/DS_SHARED/users/talb/projects/3d_avatar_generation/src')
 
+logger = init_logger('train_logger', log_path=r'/mnt/DS_SHARED/users/talb/projects/3d_avatar_generation')
 
 def train(net, train_data, optimizer, loss_fn, device):
     """Train network on training dataset."""
